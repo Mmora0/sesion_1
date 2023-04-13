@@ -203,3 +203,227 @@ document =  Se ejerce especificamente lo que se encuentre dentro de la etiqueta 
 	botón > click > función } Escuchador de eventos
 
 * Por buena práctica el button, debe ir dentro de un contenedor
+
+
+Clase - 16
+
+Maquetar - Maquetación = Crear estructura y contenido de una página web 
+
+* Defición del proyecto a realizar, contenido, textos, botones, etc.
+
+etiquetas usadas =
+
+(section)
+(h2)
+(id)
+(button)
+(span)
+
+
+
+
+Clase - 17
+
+etiquetas usadas =
+
+(input)
+(label)
+
+atributos = 
+(type)
+(name)
+(for)
+
+
+
+
+Clase - 18
+
+
+Para llamar una función en Javascript, no se debe separar por guiones sino pegados y cada palabra diferente con una Mayuscula
+
+(let)
+(document.getElementById)
+(.addEventeListener)
+(function)
+
+Tenemos que ser cuidadosos si no posicionamos correctamente linkeando los scripts en el html, no se leerá lo que estemos haciendo, ya que la lectura de arriba hacía abajo, leerá el script como algo vacío.
+
+
+
+
+Clase - 19
+
+ Para no tener que estar preocupados por la posición del link del archivo javascript en nuestro html, tenemos que usar otro evento en el archivo de js = window.addEventListener('load', 'nombre de la función') y luego incluir la función (function + 'nombre de la función') y luego agregar dentro de esta función las operaciones que necesitemos
+
+Ya nuestro botón y alerta nos menciona que hemos seleccionado una mascota, pero necesitamos saber cuál mascota, para eso usaremos un condicional = 
+
+					>	(if (input1.checked)) 
+						"name del input"
+						>	(else if (input2.checked)) 
+							"name del input"
+						>	(else if (input3.checked)) 
+							"name del input"
+
+* el checked lo usamos para el input de tipo 'radio', para corroborar que ese fué "seleccionado"
+
+
+
+
+
+Clase - 20
+
+En esta clase asignamos las condicionales de cada mascota, según la elección del usuario, haciendo uso de (function), (let), (if), (else if), (else) y además asignando las respectivas (input) por cada elemento.
+
+Haciendo que se le muestre al usuario la elección que haya realizado en pantalla.
+
+
+
+Clase - 21
+
+Metodos de manipulación de D.O.M.
+
+Documentación = Es una explicación de cómo funcionan ciertas tecnologías, donde podremos encontrar como utilizar distintas funciones, propiedades y metodos de JS, entre otros.
+
+Metodo innerHTML = Encontraremos documentación que podremos encontrar de Mozilla
+
+innerHTML = Muestra lo que tenemos dentro de la etiqueta, sin mostrar las etiquetas. 
+	* Podemos usar esto para cambiar lo que tenemos dentro de la etiqueta
+
+
+
+
+
+Clase - 22
+
+Asignamos a la Computadora la elección automatica de una mascota, haciendo uso de la operacion matematica (Math.random), asignando a cada mascota un número para asignarlo aleatoriamente al pc. generamos la función de 'seleccionarMascotaEnemigo' y 'spanMascotaEnemigo' junto con el 'inner.HTML' para llamar los inputs que se encuentran en html
+
+
+
+
+
+Clase -23
+
+
+		HTML					JS
+
+
+		BtnFuego	   ---		  let ataqueJugador
+					|		   ataqueFuego(){
+					-----	>	    ataqueJugador = Fuego
+							  }
+		BtnAgua				   ataqueAgua(){
+						>	    ataqueJugador = Agua
+							  }
+		BtnTierra				   ataqueTierra(){
+						>	    ataqueJugador = Tierra
+
+
+	* Variables Globales 
+
+Se seleccionaron los ataques del jugador
+
+
+
+
+Clase - 24
+
+Se asignarion los ataques del computador, haciendo uso de los numeros aleatorios, designando un numero por ataque.
+
+
+
+
+
+
+Clase - 25
+
+
+
+Metodos usados =
+
+(createElement) = Document.createElement = Nos ayuda a crear nuevos elementos en JS
+(appendChild) = Document.appendChild = Nos ayuda a agarrar elementos de JS para ponerlos en HTML
+
+
+
+
+Clase - 26
+
+Se generó la función 'crearMensaje', para que el resultado de los ataques de ambas mascostas se muestre junto con los ataques de cada uno
+
+
+
+
+Clase - 27
+
+Operador && = AND
+
+
+
+TABLA DE VERDAD > AND
+
+Condición 1		Operador	Condición 2			Resultado
+
+Verdadero		AND		Verdadero		>	Verdadero
+Verdadero		AND		Falso			>	Falso
+Falso			AND		Verdadero		>	Falso
+Falso			AND		Falso			>	Falso
+
+
+
+TABLA DE VERDAD > OR
+
+Condición 1		Operador	Condición 2			Resultado
+
+Verdadero		OR		Verdadero		>	Verdadero
+Verdadero		OR		Falso			>	Verdadero
+Falso			OR		Verdadero		>	Verdadero
+Falso			OR		Falso			>	Falso
+
+
+
+Condición 1		Operador	Resultado 
+
+Verdadero		NOT		Falso
+Falso			NOT		Verdadero	
+
+
+
+	AND > &&
+	OR  > ||
+	NOT > !
+
+
+Clase - 28
+
+Se realizaron la resta de vidas según el ataque que hiciera cada mascota, como del jugador y del enemigo
+
+
+
+Clase - 29
+
+Agregamos mensaje para saber si perdimos o ganamos la pelea, añadiendo la lógica, programando un mensaje final con otra funcion.
+
+
+Clase - 30
+
+(location.reload ()) = recarga la pagina html 
+
+Anclamos el reinicio de la página al botón
+
+Atributo (disabled) = cancela la opción de pulsar un botón
+
+Deshabilitamos los botones de ataque usando el atributo 'disabled', aplicandolo desde JS
+
+
+
+
+
+
+Clase - 31
+
+Dividiremos las secciones para que se muestre y oculten, segú como avance el juego.
+
+Propiedad (style.display) = Modificar los estilo en html desde JS
+
+Colocamos el estilo none para que no se muestre y luego block cuando queremos que esté
