@@ -3,18 +3,69 @@
     <head>
         <meta charset="utf-8">
         <title>MATERIA</title>
+        <script src="materia.js"></script>
     </head>
 
     <body>
         <h1>MATERIA 🔥💧🌱</h1>
-        <p>
-            <button>Fuego 🔥</button>
-        </p>
+        <hr> <br>
+        <section id="seleccionar-mascota">
+
+            <h2>Elige tu mascota:</h2>
+
+            <label for="hipodoge">🔥Hipodoge🔥</label>
+            <input type="radio" name="mascota" id="hipodoge">
+
+            <label for="capipepo">💧Capipepo💧</label>
+            <input type="radio" name="mascota" id="capipepo">
+
+            <label for="ratigueya">🌱Ratigueya🌱</label>
+            <input type="radio" name="mascota" id="ratigueya">
+
+            
+            <button id="boton-mascota">Seleccionar</button>
+
+        </section>
+        <br> <br> 
+        <section id="seleccionar-ataque">
+
+            
+
+            <p>Tú mascota <span id="mascota-jugador"></span> tiene <span id="vidas-jugador">3</span>  vidas</p>
+            <p>La mascota <span id="mascota-enemigo"></span> del enemigo tiene <span id="vidas-enemigo">3</span>  vidas</p>
+
+            <br>
+
+            <h2>Elige tu ataque:</h2>
+
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌱</button>
+            </p>
+        </section>
+        <br> 
+        <section id="mensajes"></section>
+
+        <br> <hr>
+        
+        <section id="reiniciar">
+            <h2>¿Quieres volver a jugar - MATERIA🔥💧🌱?</h2>
+        <p>Pulsa aquí:</p>
+            <button id="boton-reiniciar">Reiniciar</button>
+        </section>
+
+        
+
+
+
+
+
 
         <br> <br> <hr> <br>
 
 
-        <h3>¿Quieres jugar?</h3>
+        <h3>¿Quieres jugar Piedra, Papel o Tijera??</h3>
         <p>
             <button><a href="piedrapapeltijera.html">Pulsa aquí</a></button>
         </p>
